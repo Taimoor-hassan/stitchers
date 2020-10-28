@@ -124,3 +124,7 @@
         font-size: 30px;
         font-weight: 500;
     }
+    
+    .navbar-dark {
+        background-color: #833ab4;
+    }

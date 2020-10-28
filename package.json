@@ -20,5 +20,8 @@
     "homepage": "https://github.com/Taimoor-hassan/stitchers#readme",
     "devDependencies": {
         "lite-server": "^2.5.4"
+    },
+    "dependencies": {
+        "bootstrap": "^4.5.3"
     }
 }
