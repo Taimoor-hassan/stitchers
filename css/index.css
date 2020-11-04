@@ -131,3 +131,8 @@
         color: #a17e1d;
         ;
     }
+    
+    .btn:hover {
+        cursor: pointer;
+        transform: scale(1.15);
+    }
