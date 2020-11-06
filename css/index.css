@@ -108,3 +108,24 @@
         cursor: pointer;
         transform: scale(1.15);
     }
+    
+    .carousel {
+        background-color: gray;
+    }
+    
+    .carousel-item {
+        height: 400px;
+    }
+    
+    .carousel-item img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        min-height: 400px;
+    }
+    
+    #carouselButton {
+        right: 0px;
+        position: absolute;
+        bottom: 0px;
+    }
