@@ -20,9 +20,13 @@
 }
 
 .login-form {
-    width: 28rem;
+    width: 23rem;
     margin: auto;
-    margin: 0 auto;
+}
+
+form{
+    width: 100%;
+    margin: auto;
 }
 
 .login-form .hint-text {
