@@ -22,14 +22,10 @@ body{
 }
 
 .login-form {
-    width: 450px;
-    margin: auto;
+    max-width:450px;
+    margin :auto;
 }
 
-form{
-    margin: auto;
-    width: 100%;
-}
 
 .login-form .hint-text {
     color: #fff;
