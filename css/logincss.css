@@ -12,13 +12,9 @@
  * style for LOGIN
  *
  **********************/
-body{
+#loginContainer{
     background-color: #232F3E;
     height: 100vh;
-}
-#loginContainer{
-    /* background-color: #232F3E;
-    height: 100vh; */
 }
 
 .login-form {
