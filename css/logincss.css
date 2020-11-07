@@ -22,12 +22,13 @@ body{
 }
 
 .login-form {
-    width: 80vw;
+    width: 450px;
     margin: auto;
 }
 
 form{
     margin: auto;
+    width: 100p%;
 }
 
 .login-form .hint-text {
@@ -46,9 +47,6 @@ form{
     font-weight: bold;
 }
 
-.social-btn {
-
-}
 
 .input-group {
     background-color: #4D6F50;
