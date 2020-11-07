@@ -94,7 +94,8 @@
     /* footer */
     
     footer {
-        background-color: rgb(41, 41, 41);
+        background-color: #131A22;
+        /* background-color: rgb(41, 41, 41); */
         bottom: 0;
         width: 100%;
         color: white;
