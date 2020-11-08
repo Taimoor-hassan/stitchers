@@ -59,7 +59,7 @@
         </ul>
     </div>
     <div class="avtar "><i class="fas fa-caret-down fa-2x "></i>&nbsp;</div>
-    <a href="./auth/login.html"><i class="fas fa-user-circle fa-2x "></i></a>
+    <a href="./auth/login.html" ><i class="fas fa-user-circle fa-2x avtar"></i></a>
 
 </nav>
 
@@ -269,30 +269,8 @@
 
     <script src="./js/loading.js"></script>
     <script src="./js/popinfo.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-        $("#carouselButton").click(function() {
-            if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                $("#mycarousel").carousel('pause');
-                $("#carouselButton").children("span").removeClass('fa-pause');
-                $("#carouselButton").children("span").addClass('fa-play');
-            } else if ($("#carouselButton").children("span").hasClass('fa-play')) {
-                $("#mycarousel").carousel('cycle');
-                $("#carouselButton").children("span").removeClass('fa-play');
-                $("#carouselButton").children("span").addClass('fa-pause');
-            }
-        });
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="./js/network status.js"></script>
+    <script src="./js/scroll.js"></script>
 
 
 </body>
