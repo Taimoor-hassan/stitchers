@@ -10,8 +10,6 @@
         <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
         <link rel="icon" href="../images/logo.jfif">
 
-        <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="../css/load.css">
         <!-- <link rel="stylesheet" href="style./css/popinfo.css"> -->
     
         <!-- JS, Popper.js, and jQuery -->
@@ -61,7 +59,7 @@
                 right: 0;
                 padding: 30px;
                 
-                color: #232F3E;
+                color: white;
                 font-size: 30px;
                 text-align: center;
                 
@@ -81,7 +79,7 @@
                 background-color: #00cd05;
                 padding: 20px;
                 margin: 20px;
-                color: #232F3E;
+                color: white;
                 border-radius: 10px;
             }
             select, input{
@@ -117,46 +115,57 @@
                 font-weight: normal;
                 font-size: 22px;
             }
+            
+            #cakes{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding-top: 20px;
+                background-color: rgba(196,153,108,.75);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                display: none;
+            }
+            
 
         </style>
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" > 
             <button style="outline: none; border: none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="background:none; border:none">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
         
-            <a class="navbar-brand " style="padding-left: 4rem; " href="../index.html"> <img class="logo " src="../images/logo.jfif" alt="logo " srcset=" ">
-            </a>
-        
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
                 <ul class="nav navl d-flex justify-content-around ">
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="../index.html"><span class="fa fa-home fa-lg"></span> Home</a>
+                    <li class="nav-item active " >
+                        <a class="nav-link" href="../index.html" style="color: white;"><span class="fa fa-home fa-lg" ></span> Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="../collection.html"><span class="fas fa-compact-disc fa-lg"></span>
+                        <a class="nav-link " href="../collection.html" style="color: white;"><span class="fas fa-compact-disc fa-lg"></span>
                             Collection</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link about" href="../fabric.html"><span class="fas fa-money-check-alt fa-lg"></span>
+                        <a class="nav-link about" href="../fabric.html" style="color: white;"><span class="fas fa-money-check-alt fa-lg"></span>
                             Pricing</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="../contact.html"><span class="fas fa-comments fg-lg"></span> Contact Us</a>
+                        <a class="nav-link " href="../contact.html" style="color: white;"><span class="fas fa-comments fg-lg"></span> Contact Us</a>
                     </li>
                     
                 </ul>
             </div>
-            <div class="avtar "><i class="fas fa-caret-down fa-2x "></i>&nbsp;</div>
-            <a href="./auth/login.html" ><i class="fas fa-user-circle fa-2x "></i></a>
+            <div class="avtar " style="color: white; padding-right: 2rem;"><i class="fas fa-caret-down fa-2x "></i>&nbsp;</div>
+            <a href="./auth/login.html" style="color: white;" ><i class="fas fa-user-circle fa-2x "></i></a>
         
         </nav>
 
         
-        <div id="whole" style="background-color: #232F3E;">
+        <div id="whole" style="background-color: #232F3E; padding-top: 2.7rem; padding-bottom: 2rem;">
             <div id="appbar">
                 <img src="" style="background-color: #232F3E;">
             </div>
@@ -176,7 +185,7 @@
                     <input  id="orderphone" type="text">
                 </div>
                 
-                <div class="block">
+                <div class="block" style="color: black;">
                     <h3 align="center" class="nicefont">Delivery Date</h3>
                     <input id="datepicker" placeholder="Click to set Delivery Date..." readonly>
                 </div>
@@ -272,9 +281,9 @@
             //     return pb
             // })
             
-            var orderdetails = {
-                cakes : []
-            }
+            // var orderdetails = {
+            //     cakes : []
+            // }
             
             // function togglepb(n){
             //     //check is this cake added
