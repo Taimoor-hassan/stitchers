@@ -61,8 +61,9 @@
             <li style="padding-top: .3rem;">
                 <div style="background-color: #b18b22; border-radius: 4px;">
                     <form class="form-inline ">
-                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-                            aria-label="Search" style="border-radius: 2px;">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" id="filterInput"
+                            onkeyup="myFunction()" placeholder="By gender,price,brand" aria-label="Search"
+                            style="border-radius: 2px;">
                         <i class="fas fa-search fa-1.9x" aria-hidden="true"></i>
                     </form>
                 </div>
@@ -223,84 +224,121 @@
 
     <!-- Our work -->
     <br>
-    <p class="label">OUR PRODUCTS</p>
+    <p class="label">Featured</p>
 
-    <div class="our_work ">
-
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
-        <div class="card " style="width: 15rem; height: 20rem;">
-            <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
-                alt="Card image cap ">
-            <div class="card-body">
-                <p class="card-text cinfo">
-                    Gender : Male <br> Colour : define <br> Price : 0.0 Rs <br>
-                    <small>More</small></p>
-            </div>
-        </div>
+    <div class="product-grid">
+        <div class="section-c" style="display: flex; flex-wrap: wrap;">
+            <div class="our_work">
 
 
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : fale</div>
+                                <div class="name">Brand : Armani</div>
+                                <div class="price">Price : 300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : Male</div>
+                                <div class="name">Brand : Brmani</div>
+                                <div class="price">Price : 400.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : Fale</div>
+                                <div class="name">Brand : Crmani</div>
+                                <div class="price">Price : 500.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : Male</div>
+                                <div class="name">Brand : Crmani</div>
+                                <div class="price">Price : 600.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : Fale</div>
+                                <div class="name">Brand : Brmani</div>
+                                <div class="price">Price : 700.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : Fale</div>
+                                <div class="name">Brand : Drmani</div>
+                                <div class="price">Price : 800.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : Male</div>
+                                <div class="name">Brand : Drmani</div>
+                                <div class="price">Price : 900.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card " style="width: 16rem; height: 20.5rem;">
+                    <img class="card-img-top " style="height: 61%; " src="https://source.unsplash.com/300x250"
+                        alt="Card image cap ">
+                    <div class="card-body">
+                        <div class="product-info-container">
+                            <div class="info cinfo">
+                                <div class="gender">Gender : Fale</div>
+                                <div class="name">Brand : Drmani</div>
+                                <div class="price">Price : 100.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
@@ -308,6 +346,21 @@
     <script src="./js/popinfo.js"></script> -->
     <script src="./js/network status.js"></script>
     <script src="./js/scroll.js"></script>
+
+    <!-- //filter  -->
+    <script>
+
+        document.getElementById("filterInput").oninput = function () {
+            var matcher = new RegExp(document.getElementById("filterInput").value.toUpperCase());
+            for (let i = 0; i < document.getElementsByClassName("card").length; i++) {
+                if (matcher.test(document.getElementsByClassName("name")[i].innerHTML.toUpperCase()) || matcher.test(document.getElementsByClassName("price")[i].innerHTML.toUpperCase()) || matcher.test(document.getElementsByClassName("gender")[i].innerHTML.toUpperCase())) {
+                    document.getElementsByClassName("card")[i].style.display = "inline-block";
+                } else {
+                    document.getElementsByClassName("card")[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
 
 </body>
