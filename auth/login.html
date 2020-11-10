@@ -1,89 +1,157 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Sign in | Tailor online</title>
-	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	    
-		<link rel="stylesheet" type="text/css" href="../css/auth.css">
-	</head>
-	<body>
-		
-		<div id="loginContainer">
-			<div class="login-form">
-				<form action="" method="post">
-					<div class="text-center padding-top-100px">
-						<!-- <img class="mx-auto d-block margin-bottom-25px" width="100px" src="../images/logo.jfif" style="border-radius: 1rem;" > -->
-						<i class="fa fa-user-circle fa-5x mx-auto d-block margin-bottom-25px" style="color: white;"></i>
+<head>
+	<title>Sign in | Tailor online</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/auth.css">
+
+</head>
+
+<body>
+
+	<div id="loginContainer">
+		<div class="login-form">
+			<form action="" method="post">
+				<div class="text-center padding-top-100px">
+					<!-- <img class="mx-auto d-block margin-bottom-25px" width="100px" src="../images/logo.jfif" style="border-radius: 1rem;" > -->
+					<i class="fa fa-user-circle fa-5x mx-auto d-block margin-bottom-25px" style="color: white;"></i>
+				</div>
+
+				<!-- <h1 class="text-center light-green-color margin-bottom-25px">NEAT</h1> -->
+				<div class="form-group ">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user"></i></span>
+						<input type="text" name="username" class="form-control" placeholder="Enter email"
+							required="required">
 					</div>
+				</div>
 
-					<!-- <h1 class="text-center light-green-color margin-bottom-25px">NEAT</h1> -->
-					<div class="form-group ">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="fa fa-user"></i></span>
-							<input type="text" name="username" class="form-control" placeholder="Enter email" required="required">
-						</div>
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+						<input type="password" name="password" class="form-control" placeholder="enter password"
+							required="required">
 					</div>
+				</div>
 
-					<div class="form-group">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-							<input type="password" name="password" class="form-control" placeholder="enter password" required="required">
-						</div>
-					</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-success btn-block">
+						<a href="#" class="light-green-color">Sign In</a>
+					</button>
+				</div>
 
-					<div class="form-group">
-						<button type="submit" class="btn btn-success btn-block">
-							<a href="#" class="light-green-color">Sign In</a>
-						</button>
-					</div>
+				<div class="form-group" id="googlebtn" onclick="GoogleLogin();" style="width: auto;">
+					<!-- <button type="submit" class="btn btn-success btn-block">
+							<p class="light-green-color">Sign In With Google</p>
+						</button> -->
+					<center>
+						<button"
+							class="firebaseui-idp-button mdl-button mdl-js-button mdl-button--raised firebaseui-idp-google firebaseui-id-idp-button"
+							data-provider-id="google.com" style="background-color:#ffffff ;"
+							data-upgraded=",MaterialButton"><span class="firebaseui-idp-icon-wrapper"><img
+									class="firebaseui-idp-icon" alt=""
+									src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"></span><span
+								class="firebaseui-idp-text firebaseui-idp-text-long">Sign in with Google</span><span
+								class="firebaseui-idp-text firebaseui-idp-text-short">Google</span></button>
+					</center>
+					<!-- <div id="firebaseui-auth-container"></div> -->
 
-					<div class="clearfix">
-			            <label class="pull-left checkbox-inline white-color"><input type="checkbox"> Remember me</label>
-			            <a href="#" class="pull-right text-success light-green-color">Forgot Password?</a>
-			        </div>
-					
-				</form>
-				<div class="hint-text">Don't have an account? <a href="./Register.html" class="text-success light-green-color">Register Now!</a></div>
-			</div>
-			
-			
+
+				</div>
+
+				<div class="clearfix">
+					<label class="pull-left checkbox-inline white-color"><input type="checkbox"> Remember me</label>
+					<a href="#" class="pull-right text-success light-green-color">Forgot Password?</a>
+				</div>
+
+			</form>
+			<div class="hint-text">Don't have an account? <a href="./Register.html"
+					class="text-success light-green-color">Register Now!</a></div>
 		</div>
 
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+	</div>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyDhA_28heFEvbWCFHK9JoFJ-saRw1N1dv4",
-    authDomain: "tailoronline-fb1c9.firebaseapp.com",
-    databaseURL: "https://tailoronline-fb1c9.firebaseio.com",
-    projectId: "tailoronline-fb1c9",
-    storageBucket: "tailoronline-fb1c9.appspot.com",
-    messagingSenderId: "132245891690",
-    appId: "1:132245891690:web:5df8604d753bee9312f813",
-    measurementId: "G-99KB09ZNYM"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+	<!-- FIREBASE START -->
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	  https://firebase.google.com/docs/web/setup#available-libraries -->
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyDY26AV-Q8dk2MhG-fkwtv0EUm9fLryFiE",
+			authDomain: "tailoronline-dc888.firebaseapp.com",
+			databaseURL: "https://tailoronline-dc888.firebaseio.com",
+			projectId: "tailoronline-dc888",
+			storageBucket: "tailoronline-dc888.appspot.com",
+			messagingSenderId: "32025404906",
+			appId: "1:32025404906:web:66f3781e36e05301833e93"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+	<!-- FIREBASE END -->
+
+	<script src="./googlelogin.js" type="text/javascript"></script>
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 
 
-		<!-- jQuery and Bootstrap JS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	</body>
-	
+	<!-- jQuery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+	<!-- CUSTOM BUTTONS -->
+
+	<script src="https://www.gstatic.com/firebasejs/ui/4.7.1/firebase-ui-auth.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.1/firebase-ui-auth.css" />
+	<script type="text/javascript">
+		// FirebaseUI config.
+		var uiConfig = {
+			signInSuccessUrl: '../index.html',
+			signInOptions: [
+				// Leave the lines as is for the providers you want to offer your users.
+				firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+				//   firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+				//   firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+				//   firebase.auth.GithubAuthProvider.PROVIDER_ID,
+				//   firebase.auth.EmailAuthProvider.PROVIDER_ID,
+				//   firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+				//   firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+
+			],
+			// tosUrl and privacyPolicyUrl accept either url string or a callback
+			// function.
+			// Terms of service url/callback.
+			// tosUrl: '../index.html',
+			// // Privacy policy url/callback.
+			// privacyPolicyUrl: function() {
+			//   window.location.assign('../index.html');
+			// }
+		};
+
+		// Initialize the FirebaseUI Widget using Firebase.
+		var ui = new firebaseui.auth.AuthUI(firebase.auth());
+		// The start method will wait until the DOM is loaded.
+		ui.start('#firebaseui-auth-container', uiConfig);
+	</script>
+
+
+</body>
+
+
+
 </html>
